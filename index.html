@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi web de pruebas</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background-color: #f7f9fc;
+      color: #1f2937;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1d4ed8;
+    }
+    #mensaje {
+      margin-top: 16px;
+      font-weight: 600;
+      color: #059669;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>¡Hola! Esta es mi página de pruebas</h1>
+    <p>
+      Si ves esto en el navegador, significa que el archivo <code>index.html</code>
+      está funcionando correctamente.
+    </p>
+    <button id="btn-probar" type="button">Probar interacción</button>
+    <p id="mensaje"></p>
+  </main>
 
+  <script>
+    const boton = document.getElementById("btn-probar");
+    const mensaje = document.getElementById("mensaje");
+
+    boton.addEventListener("click", () => {
+      mensaje.textContent = "¡Funciona! Git y GitHub Pages están en marcha.";
+    });
+  </script>
+</body>
+</html>
