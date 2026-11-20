@@ -9,7 +9,7 @@
   /* --- Colores (provisionales: sustituir por los de la marca) --- */
   --color-fondo-oscuro: #0f2c3d;   /* cabecera, inicio y pie */
   --color-fondo-claro: #f4f6f7;    /* sección de misión, visión y valores */
-  --color-texto-claro: #eef3f5;    /* texto sobre fondo oscuro */
+  --color-texto-claro: #3e3e3e;    /* texto sobre fondo oscuro */
   --color-texto: #14232c;          /* texto sobre fondo claro */
   --color-acento: #f0a23a;         /* calor / energía */
   --color-frio: #3a8fb7;           /* extremo "frío" de la franja térmica */
