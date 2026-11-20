@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi web de pruebas</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      max-width: 720px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      background-color: #f7f9fc;
-      color: #1f2937;
-    }
-    .card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 28px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    }
-    button {
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1d4ed8;
-    }
-    #mensaje {
-      margin-top: 16px;
-      font-weight: 600;
-      color: #059669;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TENEX · Tecnologías Energéticas Emergentes</title>
+  <meta name="description" content="TENEX es un colectivo de estudiantes que despierta la vocación energética con proyectos de ingeniería reales y divulgación.">
+
+  <!-- El CSS se añadirá después. Crea la carpeta css/ y el archivo estilos.css cuando lo tengas. -->
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-  <main class="card">
-    <h1>¡Hola! Esta es mi página de pruebas</h1>
-    <p>
-      Si ves esto en el navegador, significa que el archivo <code>index.html</code>
-      está funcionando correctamente.
-    </p>
-    <button id="btn-probar" type="button">Probar interacción</button>
-    <p id="mensaje"></p>
+
+  <!-- ================= CABECERA Y MENÚ ================= -->
+  <header class="cabecera">
+    <nav class="menu" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#identidad">Misión, visión y valores</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= SECCIÓN 1: INICIO ================= -->
+    <section id="inicio" class="inicio">
+      <img
+        class="logo-tenex"
+        src="img/Logo-2.png"
+        alt="Logo de TENEX"
+        width="240">
+
+      <h1>TENEX</h1>
+      <p class="nombre-completo">Asociación Tecnologías Energéticas Emergentes</p>
+
+      <!--
+      Universidad / facultad: cambia el texto y el logo por los vuestros
+      <div class="universidad">
+        <img
+          class="logo-universidad"
+          src="img/logo-universidad.png"
+          alt="Logo de la universidad"
+          width="160">
+        <p>[Nombre de la universidad y de la facultad]</p>
+      </div>
+    </section>
+    -->
+
+    <!-- ================= SECCIÓN 2: MISIÓN, VISIÓN Y VALORES ================= -->
+    <section id="identidad" class="identidad">
+      <h2>Misión, visión y valores</h2>
+
+      <article id="mision" class="bloque">
+        <h3>Misión</h3>
+        <p>
+          Despertar la vocación energética entre estudiantes desarrollando
+          proyectos de ingeniería prácticos y divulgando. Proponer soluciones
+          sostenibles frente a los retos que debamos afrontar en España y
+          Europa en materia de energía e ingeniería.
+        </p>
+      </article>
+
+      <article id="vision" class="bloque">
+        <h3>Visión</h3>
+        <p>
+          Fomentar el desarrollo de una industria pesada sostenible española
+          de cara al futuro y que una mayor parte de la sociedad conozca de
+          dónde sale la energía que consume.
+        </p>
+      </article>
+
+      <article id="valores" class="bloque">
+        <h3>Valores</h3>
+        <p>
+          Trabajamos y divulgamos desde el rigor técnico y el enfoque
+          sostenible. Creemos que es posible mantener la soberanía técnica y
+          alcanzar nuestros intereses, de España y Europa, sin que esto se dé
+          en perjuicio del medioambiente.
+        </p>
+      </article>
+    </section>
+
   </main>
 
-  <script>
-    const boton = document.getElementById("btn-probar");
-    const mensaje = document.getElementById("mensaje");
+  <!-- ================= PIE ================= -->
+  <footer class="pie">
+    <p>TENEX · Asociación Tecnologías Energéticas Emergentes</p>
+    <p>Instagram: <a href="https://www.instagram.com/tenex.valencia.instagram/" target="_blank" rel="noopener">@tenex.instagram</a></p>
+  </footer>
 
-    boton.addEventListener("click", () => {
-      mensaje.textContent = "¡Funciona! Git y GitHub Pages están en marcha.";
-    });
-  </script>
 </body>
 </html>
